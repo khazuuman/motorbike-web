@@ -1,0 +1,18 @@
+
+.checkbox-btn button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    width: auto;
+    background-color: #ed1d24;
+    padding: 12px 23px;
+    line-height: 2em;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkbox-btn button:hover {
+    background-color: black;
+}

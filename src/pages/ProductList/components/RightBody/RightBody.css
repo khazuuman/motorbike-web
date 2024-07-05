@@ -1,0 +1,110 @@
+.product-list-main-right {
+    width: 30%;
+    padding: 0 25px;
+}
+
+.pro-search-box {
+    display: flex;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 56px;
+}
+
+.pro-search {
+    width: calc(100% - 52px);
+    height: inherit;
+    outline: none;
+    padding: 10px 10px 10px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #dadada;
+    transition: 0.2s ease;
+}
+
+.pro-search:focus {
+    border: 1px solid #ed1d24;
+}
+
+.search-btn {
+    width: 52px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #ed1d24;
+    color: #fff;
+    cursor: pointer;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.fa-magnifying-glass {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 31px;
+}
+
+.filter-box-btn {
+    margin-top: 30px;
+}
+
+.category-box, .tag-box {
+    margin-top: 70px;
+}
+
+.category-box ul li {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.category-box ul li a {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .1em;
+    line-height: 1.5em;
+    transition: 0.2s ease;
+}
+
+.category-box ul li a:hover {
+    color: #ed1d24;
+}
+
+.tag-box .tag-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag-box .tag-list a {
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Heboo', sans-serif;
+    letter-spacing: 0.075em;
+    color: #000;
+    /* line-height: 1.1em; */
+    line-height: 27px;
+    transition: 0.2s ease;
+}
+
+.tag-box .tag-list a:hover {
+    color: #ed1d24;
+}
+
+.tag-box .tag-list span::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #000;
+    margin: 0 15px;
+}

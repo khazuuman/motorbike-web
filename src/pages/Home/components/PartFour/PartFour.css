@@ -1,0 +1,94 @@
+.body-row4 {
+    width: 100%;
+    margin: 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-row4-inner {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    gap: 50px;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.body-row4-inner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-row4-inner-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.row4-single-left {
+    display: flex;
+}
+
+.row4-single-left-inner {
+    text-align: right;
+}
+
+.row4-h4 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.025px;
+    margin-bottom: 15px;
+}
+
+.row4-p {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #808080;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.row4-span {
+    font-size: 40px;
+    color: #E4E1E5;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.row4-single-left .row4-span {
+    margin-left: 15px;
+}
+
+.row4-single-right-inner {
+    text-align: left;
+}
+
+.row4-single-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.body-row4-inner-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.row4-single-right .row4-span {
+    margin-right: 15px;
+}
+
+/* start responsive */
+
+@media (max-width: 1536px) {
+
+    .body-row4-inner{
+        width: 90%;   
+    }
+}
+
+/* end responsive */

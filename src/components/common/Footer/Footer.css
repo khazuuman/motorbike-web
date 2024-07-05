@@ -1,0 +1,108 @@
+footer {
+    width: 100%;
+    height: 531px;
+}
+
+.footer-container-top {
+    background-color: #0d0d0d;
+    height: 443px;
+}
+
+.footer-top {
+    padding: 103px 0;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: auto;
+}
+
+.footer-top-title {
+    display: block;
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.15em;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #808080;
+    word-spacing: 1px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.footer-col {
+    padding: 0 15px;
+    width: 332.5px;
+}
+
+.footer-top-col1-bottom {
+    display: flex;
+    margin: 10px 0;
+}
+
+footer .fa-solid {
+    color: #ffffff;
+    line-height: 30px;
+    margin-right: 15px;
+}
+
+.fa-clock {
+    color: #ffffff;
+    line-height: 30px;
+    margin-right: 15px;
+}
+
+.footer-top-col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-col2 .footer-text {
+    margin-bottom: 10px;
+}
+
+.footer-top-col3-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer-top-col3-row-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    height: 88px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer-bottom span,
+.footer-bottom span>a {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.3s ease;
+}
+
+.footer-bottom span>a:hover {
+    color: #ed1d24;
+}
+
+footer a {
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #ed1d24;
+}

@@ -1,0 +1,36 @@
+.body-row3 {
+    width: 100%;
+    height: 347px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.body-row3-inner {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.body-row3-inner .image {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-130px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.body-row3-inner .image img {
+    width: 270px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.body-row3-inner>.image:hover {
+    transform: translateY(10px);
+}

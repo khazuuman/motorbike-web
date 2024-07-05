@@ -1,0 +1,98 @@
+.btnc {
+    border: none;
+    width: 196px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.btnc.short {
+    width: 150px;
+}
+
+.btnc-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnc-inner-text {
+    width: 130px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnc.short .btnc-inner-text {
+    width: 110px;
+}
+
+.btnc-inner .btnc-inner-text .span-text-btnc{
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 0 15px 0 15px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    transition: transform .3s ease;
+}
+
+.btnc.red .btnc-inner .btnc-inner-text .span-text-btnc{
+    background-color: #ed1d24;
+}
+
+.btnc.white .btnc-inner .btnc-inner-text .span-text-btnc{
+    background-color: #fff;
+}
+
+.btnc.red .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+}
+
+.btnc.white .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black;
+}
+
+.btnc-inner-text::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btnc.red .btnc-inner-text::before{
+    background-color: #fff;
+}
+
+.btnc.white .btnc-inner-text::before {
+    background-color: black;
+}
+
+.btnc.white {
+    background-color: #fff;
+    color: black;
+}
+
+.btnc.red {
+    background-color: #ed1d24;
+    color: #fff;
+}
+
+.btnc:hover span {
+    transform:  translateX(var(--span-width));
+}

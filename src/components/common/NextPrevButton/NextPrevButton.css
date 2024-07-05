@@ -1,0 +1,163 @@
+.btnd {
+    border: none;
+    width: 196px;
+    height: 55px;
+    cursor: pointer;
+    background: none;
+    position: relative;
+    background-color: #fff;
+}
+
+.btnd.left .btnd-inner {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btnd-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btnd-inner::after {
+    content: '';
+    display: block;
+    border: 1px solid #808080;
+    width: 35%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.right .btnd-inner::after {
+    right: 0;
+}
+
+.left .btnd-inner::after {
+    left: 0;
+}
+
+.btnd.left:hover .btnd-inner::after,
+.btnd.right:hover .btnd-inner::after {
+    width: 100%;
+}
+
+.btnd-inner-text {
+    width: 130px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.btnd-inner .btnd-inner-text .span-text-btnd {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 0 15px 0 15px;
+    position: absolute;
+    z-index: 10;
+    transition: transform .3s ease;
+    color: #000;
+    background-color: #fff;
+}
+
+.btnd.left .btnd-inner .btnd-inner-text .span-text-btnd {
+    right: 0;
+}
+
+.btnd.right .btnd-inner .btnd-inner-text .span-text-btnd {
+    left: 0;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+}
+
+.btnd-inner-text::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btnd:hover .span-text-btnd {
+    transform: translateX(var(--span-width));
+}
+
+/* white color -> */
+
+.btnd.white {
+    background-color: #fff;
+}
+
+.btnd.white .btnd-inner::after {
+    border: 1px solid #808080;
+}
+
+.btnd.white .btnd-inner .btnd-inner-text .span-text-btnd {
+    color: #000;
+    background-color: #fff;
+}
+
+.btnd.white .btnd-inner-text::before {
+    background-color: #000;
+}
+
+.btnd.white.right .arrow {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #000;
+}
+
+.btnd.white.left .arrow {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #000;
+}
+
+/* <- white color */
+
+/* white color -> */
+
+.btnd.black {
+    background-color: #000;
+}
+
+.btnd.black .btnd-inner::after {
+    border: 1px solid #fff;
+}
+
+.btnd.black .btnd-inner .btnd-inner-text .span-text-btnd {
+    color: #fff;
+    background-color: #000;
+}
+
+.btnd.black .btnd-inner-text::before {
+    background-color: #fff;
+}
+
+.btnd.black.right .arrow {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+}
+
+.btnd.black.left .arrow {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #fff;
+}
+
+/* <- white color */
+

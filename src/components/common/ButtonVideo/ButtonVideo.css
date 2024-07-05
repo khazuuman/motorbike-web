@@ -1,0 +1,50 @@
+.btnv {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.btnv .text {
+    position: absolute;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.circle .text span {
+    font-size: 18px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.circle i {
+    width: inherit;
+    color: #fff;
+    font-size: 24px;
+}
+
+.btnv .icon {
+    position: absolute;
+    transition: all 0.4s ease;
+    opacity: 1;
+}
+
+.btnv:hover .text {
+    opacity: 1;
+}
+
+.btnv:hover .icon {
+    opacity: 0;
+}

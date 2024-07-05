@@ -1,0 +1,75 @@
+.entire-web {
+    position: relative;
+    width: 100%;
+    height: var(--web-height);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.entire-web-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: fit-content;
+}
+
+.entire-web-col {
+    width: 100%;
+    height: 100%;
+}
+
+.entire-web>.entire-web-col:nth-child(1),
+.entire-web>.entire-web-col:nth-child(2),
+.entire-web>.entire-web-col:nth-child(3) {
+    border-right: 1px solid rgb(233, 233, 233);
+}
+
+.h5-title {
+    top: 0;
+    color: #ed1d24;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 11px;
+    line-height: 14px;
+    margin: 20px 2px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.left-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.left-text .h5-title {
+    font-size: 14px;
+    padding: 0;
+    width: fit-content;
+    font-family: 'Heebo', sans-serif;
+}
+
+.left-text .h3-title {
+    font-size: 45px;
+    width: 400px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.left-text p {
+    width: 480px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #808080;
+    font-weight: 300;
+    word-spacing: 1.2px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.btn-vid-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

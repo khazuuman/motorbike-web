@@ -1,0 +1,63 @@
+.body-row5 {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    height: 800px;
+}
+
+.body-row5 img:nth-child(1) {
+    width: 100%;
+}
+
+.body-row5>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 350px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -17px;
+    color: #f5f5f526;
+    opacity: 0.9;
+    padding-bottom: 210px;
+}
+
+.body-row5 .h3-title {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.body-row5 .h5-title {
+    font-weight: 500;
+    margin: 15px;
+}
+
+.body-row5>img:nth-child(1) {
+    z-index: 1;
+}
+
+.body-row5-title {
+    position: absolute;
+    top: 21%;
+    left: 16%;
+}
+
+.body-row5 .bike {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+/* start responsive */
+
+@media (max-width: 1536px) {
+    .body-row5 img:nth-child(1) {
+        height: 100%;
+    }
+}
+
+/* end responsive */

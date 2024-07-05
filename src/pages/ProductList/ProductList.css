@@ -1,0 +1,24 @@
+.product-list-page {
+    position: relative;
+}
+
+.product-list-container {
+    padding-top: 140px;
+}
+
+.product-list-main {
+    width: 71%;
+    padding: 100px 0 130px 0;
+    margin: auto;
+    display: flex;
+}
+
+/* start responsive */
+
+@media (max-width: 1536px) {
+    .product-list-main {
+        width: 85%;
+    }
+}
+
+/* end responsive */

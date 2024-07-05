@@ -1,0 +1,106 @@
+.banner {
+    background-image: url(https://grandprix.qodeinteractive.com/wp-content/uploads/2019/09/h4-slider-img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-inner-middle {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+}
+
+.banner-inner-middle-left {
+    padding: 0 40px;
+}
+
+.banner-inner-middle-left span,
+.h5-title,
+.h3-title,
+.banner-inner-middle-center p {
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.banner-inner-middle-left span {
+    font-size: 350px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -17px;
+    color: #f5f5f526;
+    opacity: 0.8;
+}
+
+.banner-inner-middle-center {
+    text-align: left;
+    width: 500px;
+    margin: 0 59px;
+}
+
+.banner-inner-middle-center .h3-title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 65px;
+    color: #fff;
+}
+
+.banner-inner-middle-center p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 30px 2px 50px 2px;
+    letter-spacing: 1px;
+}
+
+.banner-inner-middle-btn-box {
+    display: flex;
+    gap: 40px;
+}
+
+.banner-inner-bottom {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row-reverse;
+    padding: 30px 70px;
+}
+
+/* start responsive */
+
+@media (max-width: 1536px) {
+    .banner-inner-middle-left span {
+        font-size: 290px;
+    }
+
+    .banner-inner-middle-left {
+        padding: 0;
+    }
+
+    .banner-inner-middle-center {
+        width: 450px;
+    }
+
+    .banner-inner-middle-center .h3-title {
+        font-size: 60px;
+    }
+
+    .banner-inner-middle-center p {
+        font-size: 16px;  
+        margin: 20px 2px 30px 2px; 
+    }
+}
+
+/* end responsive */

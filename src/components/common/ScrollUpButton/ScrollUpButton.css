@@ -1,0 +1,46 @@
+.suBtn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #ed1d24;
+    bottom: 50px;
+    right: 50px;
+    border: navajowhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 10000;
+}
+
+.suBtn.hidden {
+    display: none;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+
+.suBtn:hover {
+    height: 93px;
+}
+
+.suBtn:hover .suBtn-line-col::after{
+    height: 40px;
+}
+
+.suBtn .suBtn-line-col::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 1px;
+    height: 0;
+    transition: 0.3s ease;
+}
+
